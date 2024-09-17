@@ -17,6 +17,7 @@ p,
 button,
 a,
 div {
+	user-select: none;
 	margin: 0;
 	padding: 0;
 	color: white;
@@ -153,4 +154,9 @@ li span.active::before {
 	margin: 40px auto;
 	border-radius: 50%;
 	background: #fff;
+}
+
+/* Not found */
+.not-found {
+	text-align: center;
 }

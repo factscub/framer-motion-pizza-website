@@ -9,6 +9,7 @@ const Home = lazy(() => import("./Home"));
 const Base = lazy(() => import("./Base"));
 const Toppings = lazy(() => import("./Toppings"));
 const Order = lazy(() => import("./Order"));
+const NotFound = lazy(() => import("./NotFound"));
 
 const AnimatedRoutes = ({
 	pizza,
@@ -35,6 +36,7 @@ const AnimatedRoutes = ({
 						path="/order"
 						element={<Order pizza={pizza} setShowModal={setShowModal} />}
 					/>
+					<Route path="*" element={<NotFound />} />
 				</Routes>
 			</AnimatePresence>
 		</Suspense>
